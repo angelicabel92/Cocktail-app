@@ -1,0 +1,20 @@
+.coctels__header {
+    background: url('../../assets/back-header.jpg');
+    height: 450px;
+    background-size: cover;
+
+    &__wrapper {
+        display: flex;
+        justify-content: flex-end;
+        height: 450px;
+        align-items: flex-end;
+        flex-direction: column;
+        
+        .title {
+            font-family: 'Cookie', cursive;
+            color: white;
+            font-size: 5.5rem;
+            padding: 0rem 1rem;
+        }
+    }
+}
