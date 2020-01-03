@@ -1,20 +1,60 @@
+@import '../../css/variables';
+
 .coctels__header {
-    background: url('../../assets/back-header.jpg');
-    height: 450px;
-    background-size: cover;
+    position: relative;
+
+    &__img {
+        position: absolute;
+        height: 400px;
+        width: 100%;
+        overflow: auto;
+        background: $darkBrand;
+        overflow-y: hidden;
+        border-bottom-right-radius: 35.5%;
+
+        img {
+            width: 100%;
+            opacity: .2;
+        }
+    }
 
     &__wrapper {
         display: flex;
-        justify-content: flex-end;
-        height: 450px;
-        align-items: flex-end;
+        justify-content: center;
+        height: 400px;
+        align-items: center;
         flex-direction: column;
         
         .title {
-            font-family: 'Cookie', cursive;
-            color: white;
-            font-size: 5.5rem;
-            padding: 0rem 1rem;
+            font-family: $fontFamilySpe;
+            color: $colorBrand;
+            font-size: 8.5rem;
+            padding: 0rem 1rem 1rem;
+            z-index: 1;
         }
+    }
+
+    &__btns {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 1.5rem;
+
+        &-item {
+            border-radius: 3px;
+            border: 2px solid $colorBrand;
+            background-color: $secondDark;
+            color: #00adb5;
+            padding: .5rem 2rem;
+            transition: background-color 1s ease-out;
+            
+            &:hover {
+                background-color: $darkBrand;
+            }
+        }
+    }
+
+    .coctels__cards {
+        justify-content: space-evenly;
+        margin-top: 4rem;
     }
 }

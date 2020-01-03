@@ -5,9 +5,6 @@ const HomeComponent = () => {
   return ( 
     <div>
       <HeaderComponent/>
-      {/* { this.state.results.map((product, productIndex) => {
-        return <div>{product.strDrink}</div>
-      })} */}
     </div>
    );
 }

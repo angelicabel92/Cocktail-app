@@ -1,0 +1,37 @@
+@import '../../css/variables';
+
+.coctels__cards-item {
+    background-color: $lightBrand;
+    border-radius: 3px;
+    margin-left: .1rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    box-shadow: 2px 3px 8px 0px rgb(62, 61, 62);
+
+    &_name {
+        font-size: .93rem;
+        text-align: center;
+        line-height: 2.3rem;
+        font-weight: bold;
+        padding-top: 1rem;
+        color: $darkBrand;
+        
+        &:hover {
+           color: $secondDark;
+        }
+    }
+
+    &_img {
+        width: 100%;
+        img {
+            width: 100%;
+            border-radius: 3px;
+        }
+    }
+}
+
+a:hover.coctels__cards-item {
+    text-decoration: none;
+    transform: scale(1.1);
+    filter: drop-shadow(2px 4px 6px black);
+}
